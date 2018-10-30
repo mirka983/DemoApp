@@ -65,6 +65,5 @@ namespace Timesheet.Infrastructure
 		{
 			throw new NotImplementedException();
 		}
-
 	}
 }

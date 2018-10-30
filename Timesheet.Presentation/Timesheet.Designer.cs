@@ -52,32 +52,28 @@
 			this.ActivityName = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.Duration = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.Comments = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.label6 = new System.Windows.Forms.Label();
-			this.labelShitTime = new System.Windows.Forms.Label();
-			this.label7 = new System.Windows.Forms.Label();
+			this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
+			this.statusBar1 = new System.Windows.Forms.StatusBar();
+			this.statusBarPanel1 = new System.Windows.Forms.StatusBarPanel();
+			this.timer1 = new System.Windows.Forms.Timer(this.components);
 			((System.ComponentModel.ISupportInitialize)(this.vezbaDataSetBindingSource)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.statusBarPanel1)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// buttonClose
 			// 
-			this.buttonClose.Anchor = System.Windows.Forms.AnchorStyles.Top;
-			this.buttonClose.AutoSize = true;
-			this.buttonClose.BackColor = System.Drawing.Color.Silver;
-			this.buttonClose.Location = new System.Drawing.Point(12, 38);
+			this.buttonClose.Location = new System.Drawing.Point(0, 0);
 			this.buttonClose.Name = "buttonClose";
-			this.buttonClose.Size = new System.Drawing.Size(63, 23);
-			this.buttonClose.TabIndex = 0;
-			this.buttonClose.Text = "Close";
-			this.buttonClose.UseVisualStyleBackColor = false;
-			this.buttonClose.Click += new System.EventHandler(this.buttonClose_Click);
+			this.buttonClose.Size = new System.Drawing.Size(75, 23);
+			this.buttonClose.TabIndex = 15;
 			// 
 			// button2
 			// 
 			this.button2.Anchor = System.Windows.Forms.AnchorStyles.Top;
 			this.button2.AutoSize = true;
 			this.button2.BackColor = System.Drawing.Color.Silver;
-			this.button2.Location = new System.Drawing.Point(738, 38);
+			this.button2.Location = new System.Drawing.Point(750, 38);
 			this.button2.Name = "button2";
 			this.button2.Size = new System.Drawing.Size(42, 23);
 			this.button2.TabIndex = 1;
@@ -89,7 +85,7 @@
 			this.button3.Anchor = System.Windows.Forms.AnchorStyles.Top;
 			this.button3.AutoSize = true;
 			this.button3.BackColor = System.Drawing.Color.Silver;
-			this.button3.Location = new System.Drawing.Point(786, 38);
+			this.button3.Location = new System.Drawing.Point(798, 38);
 			this.button3.Name = "button3";
 			this.button3.Size = new System.Drawing.Size(45, 23);
 			this.button3.TabIndex = 2;
@@ -100,7 +96,7 @@
 			// 
 			this.comboBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
 			this.comboBox1.FormattingEnabled = true;
-			this.comboBox1.Location = new System.Drawing.Point(158, 40);
+			this.comboBox1.Location = new System.Drawing.Point(170, 40);
 			this.comboBox1.Name = "comboBox1";
 			this.comboBox1.Size = new System.Drawing.Size(121, 21);
 			this.comboBox1.TabIndex = 3;
@@ -110,7 +106,7 @@
 			this.comboBox2.Anchor = System.Windows.Forms.AnchorStyles.Top;
 			this.comboBox2.DataSource = this.vezbaDataSetBindingSource;
 			this.comboBox2.FormattingEnabled = true;
-			this.comboBox2.Location = new System.Drawing.Point(81, 40);
+			this.comboBox2.Location = new System.Drawing.Point(93, 40);
 			this.comboBox2.Name = "comboBox2";
 			this.comboBox2.Size = new System.Drawing.Size(71, 21);
 			this.comboBox2.TabIndex = 4;
@@ -119,7 +115,7 @@
 			// 
 			this.comboBox3.Anchor = System.Windows.Forms.AnchorStyles.Top;
 			this.comboBox3.FormattingEnabled = true;
-			this.comboBox3.Location = new System.Drawing.Point(285, 40);
+			this.comboBox3.Location = new System.Drawing.Point(297, 40);
 			this.comboBox3.Name = "comboBox3";
 			this.comboBox3.Size = new System.Drawing.Size(121, 21);
 			this.comboBox3.TabIndex = 5;
@@ -128,7 +124,7 @@
 			// 
 			this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
 			this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-			this.textBox1.Location = new System.Drawing.Point(412, 41);
+			this.textBox1.Location = new System.Drawing.Point(424, 41);
 			this.textBox1.Name = "textBox1";
 			this.textBox1.Size = new System.Drawing.Size(129, 20);
 			this.textBox1.TabIndex = 6;
@@ -136,7 +132,7 @@
 			// textBox2
 			// 
 			this.textBox2.Anchor = System.Windows.Forms.AnchorStyles.Top;
-			this.textBox2.Location = new System.Drawing.Point(551, 41);
+			this.textBox2.Location = new System.Drawing.Point(563, 41);
 			this.textBox2.Multiline = true;
 			this.textBox2.Name = "textBox2";
 			this.textBox2.Size = new System.Drawing.Size(181, 20);
@@ -146,7 +142,7 @@
 			// 
 			this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
 			this.label1.AutoSize = true;
-			this.label1.Location = new System.Drawing.Point(158, 24);
+			this.label1.Location = new System.Drawing.Point(170, 24);
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(33, 13);
 			this.label1.TabIndex = 8;
@@ -156,7 +152,7 @@
 			// 
 			this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
 			this.label2.AutoSize = true;
-			this.label2.Location = new System.Drawing.Point(78, 24);
+			this.label2.Location = new System.Drawing.Point(90, 24);
 			this.label2.Name = "label2";
 			this.label2.Size = new System.Drawing.Size(33, 13);
 			this.label2.TabIndex = 9;
@@ -166,7 +162,7 @@
 			// 
 			this.label3.Anchor = System.Windows.Forms.AnchorStyles.Top;
 			this.label3.AutoSize = true;
-			this.label3.Location = new System.Drawing.Point(282, 24);
+			this.label3.Location = new System.Drawing.Point(294, 24);
 			this.label3.Name = "label3";
 			this.label3.Size = new System.Drawing.Size(72, 13);
 			this.label3.TabIndex = 10;
@@ -176,7 +172,7 @@
 			// 
 			this.label4.Anchor = System.Windows.Forms.AnchorStyles.Top;
 			this.label4.AutoSize = true;
-			this.label4.Location = new System.Drawing.Point(409, 25);
+			this.label4.Location = new System.Drawing.Point(421, 25);
 			this.label4.Name = "label4";
 			this.label4.Size = new System.Drawing.Size(80, 13);
 			this.label4.TabIndex = 11;
@@ -186,7 +182,7 @@
 			// 
 			this.label5.Anchor = System.Windows.Forms.AnchorStyles.Top;
 			this.label5.AutoSize = true;
-			this.label5.Location = new System.Drawing.Point(548, 24);
+			this.label5.Location = new System.Drawing.Point(560, 24);
 			this.label5.Name = "label5";
 			this.label5.Size = new System.Drawing.Size(56, 13);
 			this.label5.TabIndex = 12;
@@ -207,7 +203,7 @@
             this.ActivityName,
             this.Duration,
             this.Comments});
-			this.dataGridView1.Location = new System.Drawing.Point(12, 67);
+			this.dataGridView1.Location = new System.Drawing.Point(24, 67);
 			this.dataGridView1.Name = "dataGridView1";
 			this.dataGridView1.Size = new System.Drawing.Size(819, 159);
 			this.dataGridView1.TabIndex = 13;
@@ -252,34 +248,30 @@
 			this.Comments.HeaderText = "Comments";
 			this.Comments.Name = "Comments";
 			// 
-			// label6
+			// toolStripStatusLabel2
 			// 
-			this.label6.AutoSize = true;
-			this.label6.Location = new System.Drawing.Point(9, 235);
-			this.label6.Name = "label6";
-			this.label6.Size = new System.Drawing.Size(7, 13);
-			this.label6.TabIndex = 14;
-			this.label6.Text = "\r\n";
+			this.toolStripStatusLabel2.Name = "toolStripStatusLabel2";
+			this.toolStripStatusLabel2.Size = new System.Drawing.Size(23, 23);
 			// 
-			// labelShitTime
+			// statusBar1
 			// 
-			this.labelShitTime.AutoSize = true;
-			this.labelShitTime.Location = new System.Drawing.Point(333, 235);
-			this.labelShitTime.Name = "labelShitTime";
-			this.labelShitTime.Size = new System.Drawing.Size(119, 13);
-			this.labelShitTime.TabIndex = 15;
-			this.labelShitTime.Text = "Shift time: 09:00 - 17:00\r\n";
+			this.statusBar1.Location = new System.Drawing.Point(0, 244);
+			this.statusBar1.Name = "statusBar1";
+			this.statusBar1.Panels.AddRange(new System.Windows.Forms.StatusBarPanel[] {
+            this.statusBarPanel1});
+			this.statusBar1.ShowPanels = true;
+			this.statusBar1.Size = new System.Drawing.Size(887, 22);
+			this.statusBar1.TabIndex = 16;
 			// 
-			// label7
+			// statusBarPanel1
 			// 
-			this.label7.Anchor = System.Windows.Forms.AnchorStyles.Top;
-			this.label7.AutoSize = true;
-			this.label7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-			this.label7.Location = new System.Drawing.Point(12, 235);
-			this.label7.Margin = new System.Windows.Forms.Padding(3);
-			this.label7.Name = "label7";
-			this.label7.Size = new System.Drawing.Size(2, 15);
-			this.label7.TabIndex = 16;
+			this.statusBarPanel1.Name = "statusBarPanel1";
+			this.statusBarPanel1.Text = "statusBarPanel1";
+			// 
+			// timer1
+			// 
+			this.timer1.Enabled = true;
+			this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
 			// 
 			// Timesheet
 			// 
@@ -287,10 +279,8 @@
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.AutoSize = true;
 			this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-			this.ClientSize = new System.Drawing.Size(863, 257);
-			this.Controls.Add(this.label7);
-			this.Controls.Add(this.labelShitTime);
-			this.Controls.Add(this.label6);
+			this.ClientSize = new System.Drawing.Size(887, 266);
+			this.Controls.Add(this.statusBar1);
 			this.Controls.Add(this.dataGridView1);
 			this.Controls.Add(this.label5);
 			this.Controls.Add(this.label4);
@@ -309,6 +299,7 @@
 			this.Text = "Timesheet";
 			((System.ComponentModel.ISupportInitialize)(this.vezbaDataSetBindingSource)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.statusBarPanel1)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -338,11 +329,12 @@
 		private System.Windows.Forms.DataGridViewTextBoxColumn ActivityName;
 		private System.Windows.Forms.DataGridViewTextBoxColumn Duration;
 		private System.Windows.Forms.DataGridViewTextBoxColumn Comments;
-		private System.Windows.Forms.Label label6;
-		private System.Windows.Forms.Label labelShitTime;
 		//private vezbaDataSet vezbaDataSet;
 		private System.Windows.Forms.BindingSource vezbaDataSetBindingSource;
-		private System.Windows.Forms.Label label7;
+		private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel2;
+		private System.Windows.Forms.StatusBar statusBar1;
+		private System.Windows.Forms.Timer timer1;
+		private System.Windows.Forms.StatusBarPanel statusBarPanel1;
 		//private EventHandler labelContactPerson_Click;
 	}
 }

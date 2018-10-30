@@ -1,4 +1,5 @@
 ﻿using System;
+using Timesheet.Core.Interfaces;
 using Timesheet.Entities.Models;
 
 namespace Timesheet.Core.DTO
@@ -27,6 +28,14 @@ namespace Timesheet.Core.DTO
 				DateTime shiftCreatedValue = this.employeeSchadule.ShiftCreated.Value;
 				return currentDate.Equals(shiftCreatedValue.ToShortDateString());
 			}
+
+		}
+
+		public DateTime? HasShift()
+		{
+			var shift = this.employeeSchadule.ShiftCreated;
+
+			return shift;
 		}
 	}
 }
