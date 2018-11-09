@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
+using Timesheet.Core.DTO;
 using Timesheet.Presentation.Interfaces;
 
 namespace Timesheet.Presentation
@@ -14,10 +15,10 @@ namespace Timesheet.Presentation
 			this.txtBoxPassword.PasswordChar = '*';
 		}
 
-		public void ShowTimesheet(bool enabled)
+		public void ShowTimesheet(bool enabled, EmployeeDto emp)
 		{
 			Close();
-			var ts = new Timesheet(enabled);
+			var ts = new Timesheet(enabled,emp);
 			ts.Show();
 		}
 

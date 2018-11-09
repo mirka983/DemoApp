@@ -7,8 +7,6 @@ namespace Timesheet.Core
 	public class EmployeeService : IEmployeeService
 	{
 		private readonly IEmployeeRepository empRepo;
-		private readonly EmployeeDto employeeDto;
-
 		public EmployeeService(IEmployeeRepository employeeRepo)
 		{
 			this.empRepo = employeeRepo;

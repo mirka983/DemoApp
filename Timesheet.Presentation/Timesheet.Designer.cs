@@ -53,20 +53,24 @@
 			this.Duration = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.Comments = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
-			this.statusBar1 = new System.Windows.Forms.StatusBar();
-			this.statusBarPanel1 = new System.Windows.Forms.StatusBarPanel();
-			this.timer1 = new System.Windows.Forms.Timer(this.components);
+			this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+			this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
+			this.toolStripStatusLabel3 = new System.Windows.Forms.ToolStripStatusLabel();
 			((System.ComponentModel.ISupportInitialize)(this.vezbaDataSetBindingSource)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.statusBarPanel1)).BeginInit();
+			this.statusStrip1.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// buttonClose
 			// 
-			this.buttonClose.Location = new System.Drawing.Point(0, 0);
+			this.buttonClose.BackColor = System.Drawing.Color.Silver;
+			this.buttonClose.Location = new System.Drawing.Point(24, 38);
 			this.buttonClose.Name = "buttonClose";
-			this.buttonClose.Size = new System.Drawing.Size(75, 23);
+			this.buttonClose.Size = new System.Drawing.Size(63, 23);
 			this.buttonClose.TabIndex = 15;
+			this.buttonClose.Text = "Close";
+			this.buttonClose.UseVisualStyleBackColor = false;
+			this.buttonClose.Click += new System.EventHandler(this.buttonClose_Click);
 			// 
 			// button2
 			// 
@@ -253,25 +257,27 @@
 			this.toolStripStatusLabel2.Name = "toolStripStatusLabel2";
 			this.toolStripStatusLabel2.Size = new System.Drawing.Size(23, 23);
 			// 
-			// statusBar1
+			// statusStrip1
 			// 
-			this.statusBar1.Location = new System.Drawing.Point(0, 244);
-			this.statusBar1.Name = "statusBar1";
-			this.statusBar1.Panels.AddRange(new System.Windows.Forms.StatusBarPanel[] {
-            this.statusBarPanel1});
-			this.statusBar1.ShowPanels = true;
-			this.statusBar1.Size = new System.Drawing.Size(887, 22);
-			this.statusBar1.TabIndex = 16;
+			this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripStatusLabel1,
+            this.toolStripStatusLabel3});
+			this.statusStrip1.Location = new System.Drawing.Point(0, 244);
+			this.statusStrip1.Name = "statusStrip1";
+			this.statusStrip1.Size = new System.Drawing.Size(887, 22);
+			this.statusStrip1.TabIndex = 17;
+			this.statusStrip1.Text = "statusStrip1";
 			// 
-			// statusBarPanel1
+			// toolStripStatusLabel1
 			// 
-			this.statusBarPanel1.Name = "statusBarPanel1";
-			this.statusBarPanel1.Text = "statusBarPanel1";
+			this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
+			this.toolStripStatusLabel1.Size = new System.Drawing.Size(0, 17);
 			// 
-			// timer1
+			// toolStripStatusLabel3
 			// 
-			this.timer1.Enabled = true;
-			this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+			this.toolStripStatusLabel3.Margin = new System.Windows.Forms.Padding(255, 3, 0, 2);
+			this.toolStripStatusLabel3.Name = "toolStripStatusLabel3";
+			this.toolStripStatusLabel3.Size = new System.Drawing.Size(0, 17);
 			// 
 			// Timesheet
 			// 
@@ -280,7 +286,7 @@
 			this.AutoSize = true;
 			this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
 			this.ClientSize = new System.Drawing.Size(887, 266);
-			this.Controls.Add(this.statusBar1);
+			this.Controls.Add(this.statusStrip1);
 			this.Controls.Add(this.dataGridView1);
 			this.Controls.Add(this.label5);
 			this.Controls.Add(this.label4);
@@ -299,7 +305,8 @@
 			this.Text = "Timesheet";
 			((System.ComponentModel.ISupportInitialize)(this.vezbaDataSetBindingSource)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.statusBarPanel1)).EndInit();
+			this.statusStrip1.ResumeLayout(false);
+			this.statusStrip1.PerformLayout();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -332,9 +339,9 @@
 		//private vezbaDataSet vezbaDataSet;
 		private System.Windows.Forms.BindingSource vezbaDataSetBindingSource;
 		private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel2;
-		private System.Windows.Forms.StatusBar statusBar1;
-		private System.Windows.Forms.Timer timer1;
-		private System.Windows.Forms.StatusBarPanel statusBarPanel1;
+		private System.Windows.Forms.StatusStrip statusStrip1;
+		private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
+		private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel3;
 		//private EventHandler labelContactPerson_Click;
 	}
 }

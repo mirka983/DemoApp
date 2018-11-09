@@ -1,4 +1,5 @@
 ﻿using System;
+using Timesheet.Core.DTO;
 
 namespace Timesheet.Presentation.Interfaces
 {
@@ -8,7 +9,7 @@ namespace Timesheet.Presentation.Interfaces
 
 		event Action<string, string> OnValidateUser;
 
-		void ShowTimesheet(bool enabled);
+		void ShowTimesheet(bool enabled, EmployeeDto emp);
 
 		void DisplayError();
 	}

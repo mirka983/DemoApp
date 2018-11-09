@@ -1,5 +1,4 @@
 ﻿using System;
-using Timesheet.Core.Interfaces;
 using Timesheet.Entities.Models;
 
 namespace Timesheet.Core.DTO
@@ -13,6 +12,7 @@ namespace Timesheet.Core.DTO
 		{
 			this.emp = employeeDto;
 			this.employeeSchadule = employeeSchadule;
+
 		}
 
 		public bool HasShiftForToday
@@ -31,11 +31,21 @@ namespace Timesheet.Core.DTO
 
 		}
 
-		public DateTime? HasShift()
-		{
-			var shift = this.employeeSchadule.ShiftCreated;
 
-			return shift;
+		public string ShiftStart()
+		{
+			TimeSpan ts = new TimeSpan();
+			ts = this.employeeSchadule.ShiftStart;
+			string shiftStart = ts.ToString(@"hh\:mm");
+			return shiftStart;
+		}
+		public string ShiftEnd()
+		{
+			TimeSpan ts = new TimeSpan();
+			ts = this.employeeSchadule.ShiftEnd;
+			string shiftEnd =  ts.ToString(@"hh\:mm");
+			return shiftEnd;
 		}
 	}
 }
+

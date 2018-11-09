@@ -6,7 +6,6 @@ namespace Timesheet.Presentation.Models.Employee
 	internal class EmployeeModel : IEmployee
 	{
 		private readonly EmployeeDto emp;
-
 		public EmployeeModel(EmployeeDto emp)
 		{
 			this.emp = emp;
@@ -14,8 +13,8 @@ namespace Timesheet.Presentation.Models.Employee
 
 		public void ShowForm(ILoginView view)
 		{
-			view.ShowTimesheet(this.emp.HasShiftForToday);
+			view.ShowTimesheet(this.emp.HasShiftForToday,this.emp);
 		}
-		//public bool Invalid =>( this.emp == null);
+
 	}
 }
