@@ -17,6 +17,7 @@ namespace Timesheet.Presentation
 				this.toolStripStatusLabel1.Text = "Open Timesheet";
 				this.toolStripStatusLabel3.Text = string.Format("{0} - {1}", emp.ShiftStart(),
 					emp.ShiftEnd());
+				this.buttonClose.Text = "Open";
 			}
 			else
 			{
